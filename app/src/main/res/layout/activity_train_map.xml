@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Student.Train.TrainMapActivity">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/train_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.amap.api.maps.MapView>
+
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="bottom"
+        android:id="@+id/train_map_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btnstyle"
+        android:text="发布陪练消息"
+        android:textColor="@color/textColor_whit" />
+    <ImageView
+        android:id="@+id/train_map_setLocation"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="right"
+        android:src="@mipmap/location_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+</FrameLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kangzhan.student.CompayManage.InfoManage.AllocateClerkActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/compay_allocate_clerk_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <RelativeLayout
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginStart="50dp"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:text="姓名"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:text="电话"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:text="驾校数"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:text="状态"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:background="@color/color_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"/>
+    <RelativeLayout
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <com.holenzhou.pullrecyclerview.PullRecyclerView
+            android:id="@+id/compay_allocate_clerk_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--item_compay_allocate_clerk_recycler-->
+        </com.holenzhou.pullrecyclerview.PullRecyclerView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <Button
+            android:id="@+id/compay_allocate_clerk_btn"
+            android:layout_margin="10dp"
+            android:background="@drawable/btnstyle"
+            android:textColor="@color/textColor_whit"
+            android:text="确定"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

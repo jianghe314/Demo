@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kangzhan.student.School.Notice.School_Notice_MsgDetail">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/school_notice_msg_detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="10dp"
+        android:layout_margin="20dp"
+        app:cardElevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/school_notice_msg_detail_obj"
+                    android:text="接收对象："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <com.kangzhan.student.mUI.mLableLayout
+                    android:layout_below="@+id/school_notice_msg_detail_obj"
+                    android:id="@+id/school_notice_msg_detail_container"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.kangzhan.student.mUI.mLableLayout>
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/color_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"/>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/school_notice_msg_detail_sendT"
+                    android:text="发送时间："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="2016-10-25 10:00"
+                    android:layout_toEndOf="@+id/school_notice_msg_detail_sendT"
+                    android:id="@+id/school_notice_msg_detail_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/color_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"/>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/school_notice_msg_detail_sta"
+                    android:text="状态："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_toEndOf="@+id/school_notice_msg_detail_sta"
+                    android:id="@+id/school_notice_msg_detail_status"
+                    android:text="已发送"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/color_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"/>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/school_notice_msg_detail_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

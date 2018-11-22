@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="120dp" android:layout_margin="10dp">
+    <RelativeLayout
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/item_recommend_teacher_iv"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_weight="7"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/item_recommend_teacher_name"
+                android:layout_centerVertical="true"
+                android:text="张三"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/item_recommend_teacher_years"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="50dp"
+                android:layout_centerVertical="true"
+                android:text="3年教练"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/item_recommend_teacher_address"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="100dp"
+                android:layout_centerVertical="true"
+                android:text="XXXXXXX训练场"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/item_recommend_teacher_content"
+                android:textSize="@dimen/text_size12"
+                android:lineSpacingMultiplier="1.2"
+                android:text="同时，《指导意见》还就共享单车的有序投放、押金制度、信用管理等热点问题提出指导，其中包括“要求实行用户实名制注册、使用，禁止向未"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+</LinearLayout>

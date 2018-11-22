@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kangzhan.student.com.RegisterCompleteActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/student_studentRegist_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    <ImageView
+        android:scaleType="centerCrop"
+        android:background="@drawable/regist_dialog_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:layout_marginStart="25dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:src="@mipmap/regist_try"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/try_pay" />
+        <ImageView
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="40dp"
+            android:id="@+id/try_no_pay"
+            android:src="@mipmap/regist_no_try"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/studentdetail_remark_header"
+            android:src="@drawable/header"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:id="@+id/studentdetail_remark_name"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/studentdetail_remark_header"
+            android:text="张山三"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.kangzhan.student.Student.mutils.StarBar
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true"
+            ratingbar:starEmpty="@drawable/heart0"
+            ratingbar:starFill="@drawable/heart1"
+            ratingbar:starDistance="5dp"
+            ratingbar:starCount="5"
+            ratingbar:starSize="15dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/studentdetail_remark_date"
+            android:text="2017-02-25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/studentdetail_remark_date"
+            android:id="@+id/studentdetail_remark_type"
+            android:text="类型："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/studentdetail_remark_type"
+            android:id="@+id/studentdetail_remark_type_content"
+            android:text="科目二C1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:lineSpacingMultiplier="1.3"
+            android:padding="10dp"
+            android:text="我是评价内容我是评价内容我是评价内容我是评价内容我是评价内容我是评价内容我是评价内容我是评价内容我是评价内容我是评价内容我是评价内容我是评价内容"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

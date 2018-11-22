@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:padding="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_teacher_studentDetail_remark_header"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/header"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:id="@+id/item_teacher_studentDetail_remark_name"
+            android:textColor="@color/textColor_black"
+            android:textSize="@dimen/text_size16"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+        <TextView
+            android:textSize="@dimen/text_size12"
+            android:id="@+id/item_teacher_studentDetail_remark_time"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:ellipsize="marquee"
+            android:maxLines="1"
+            android:textSize="@dimen/text_size12"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/item_teacher_studentDetail_remark_time"
+            android:id="@+id/item_teacher_studentDetail_remark_type"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/item_teacher_studentDetail_remark_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textColor_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:background="@color/color_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"/>
+</LinearLayout>

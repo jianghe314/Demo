@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kangzhan.student.CompayManage.AccountManage.MessageCheckingActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/compay_account_msg_checking_toobar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+    <LinearLayout
+        android:background="@color/textColor_whit"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <RelativeLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/choice_background"
+            android:layout_weight="8.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/teacher_train_record"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="5dp"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:textColorHint="@color/textColor_gray"
+                android:background="@null"
+                android:layout_centerInParent="true"
+                android:hint="点击选择查询地址"
+                android:id="@+id/compay_account_msg_checking_address"
+                android:layout_toEndOf="@+id/teacher_train_record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/compay_account_msg_checking_choice"
+                android:textColor="@color/colorPrimary"
+                android:layout_centerInParent="true"
+                android:text="查看"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <com.holenzhou.pullrecyclerview.PullRecyclerView
+            android:id="@+id/compay_account_msg_checking_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--item_compay_account_msg_recycler-->
+        </com.holenzhou.pullrecyclerview.PullRecyclerView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <Button
+            android:id="@+id/compay_account_msg_checking_btn"
+            android:background="@drawable/btnstyle"
+            android:textColor="@color/textColor_whit"
+            android:layout_margin="10dp"
+            android:text="形成结算单"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

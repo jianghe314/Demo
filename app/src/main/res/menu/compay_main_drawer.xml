@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/compay_draw_school"
+            android:icon="@mipmap/compay_draw_school"
+            android:title="驾校账号" />
+        <item
+            android:id="@+id/compay_draw_manage"
+            android:icon="@mipmap/teacher_mystudent"
+            android:title="员工管理" />
+        <item
+            android:id="@+id/compay_draw_changPsd"
+            android:icon="@mipmap/change_password"
+            android:title="修改密码" />
+        <item
+            android:id="@+id/compay_draw_logout"
+            android:icon="@mipmap/logout"
+            android:title="退出登录" />
+    </group>
+</menu>

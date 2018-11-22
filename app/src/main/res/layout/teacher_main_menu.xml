@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="55dp" android:weightSum="4" android:background="#ffffff">
+    <View
+        android:background="#949494"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/teacher_r1"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/teacher_booking_btn"
+                android:background="@mipmap/booking0"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/teacher_booking_tv"
+                android:layout_marginTop="2dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/teacher_booking_btn"
+                android:text="@string/booking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/teacher_r2"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/teacher_train_btn"
+                android:background="@mipmap/train0"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/teacher_train_tv"
+                android:layout_marginTop="2dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/teacher_train_btn"
+                android:text="@string/train"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/teacher_r3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/teacher_exam_btn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/teacher_exam0" />
+
+            <TextView
+                android:id="@+id/teacher_exam_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/teacher_exam_btn"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="2dp"
+                android:text="@string/lesson" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/teacher_r4"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/teacher_news_btn"
+                android:background="@mipmap/info0"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/teacher_news_tv"
+                android:layout_marginTop="2dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/teacher_news_btn"
+                android:text="@string/news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

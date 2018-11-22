@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="110dp" >
+    <RelativeLayout
+        android:background="@color/background_color"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:id="@+id/item_school_account_affirm_time"
+            android:layout_margin="20dp"
+            android:text="1月8日-2月15日"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginEnd="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="20dp"
+            android:text="查看详情"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginEnd="5dp"
+            android:src="@mipmap/arrow_right"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:background="@color/color_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"/>
+    <LinearLayout
+        android:background="@color/textColor_whit"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="78dp">
+        <RelativeLayout
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/item_school_account_affirm_hour"
+                    android:layout_gravity="center"
+                    android:textColor="@color/textColor_orange"
+                    android:text="90"
+                    android:textSize="@dimen/text_size20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:text="合计培训(学时)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <View
+            android:layout_margin="10dp"
+            android:background="@color/color_line"
+            android:layout_width="0.7dp"
+            android:layout_height="match_parent"/>
+        <RelativeLayout
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/item_school_account_affirm_price"
+                    android:layout_gravity="center"
+                    android:textColor="@color/textColor_orange"
+                    android:text="2100"
+                    android:textSize="@dimen/text_size20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:text="费用(元)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View
+            android:layout_margin="10dp"
+            android:background="@color/color_line"
+            android:layout_width="0.7dp"
+            android:layout_height="match_parent"/>
+        <RelativeLayout
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/item_school_account_affirm_draw"
+                    android:layout_gravity="center"
+                    android:textColor="@color/textColor_orange"
+                    android:text="2100"
+                    android:textSize="@dimen/text_size20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:text="抽成(元)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/item_school_account_affirm_bg"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/item_school_account_affirm_status"
+                android:textColor="@color/textColor_whit"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="未确认"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:background="@color/color_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"/>
+
+</LinearLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/student_login_l"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/student_login_background"
+    tools:context="com.kangzhan.student.Student_Login">
+
+    <android.support.v7.widget.Toolbar
+        android:fitsSystemWindows="true"
+        android:id="@+id/student_login_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <ImageView
+        android:src="@drawable/student_header"
+        android:id="@+id/student_login_header"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/text_size20"
+        android:textColor="@color/textColor_whit"
+        android:text="@string/student_login_header_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:weightSum="7"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/login_edittext_style"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <RelativeLayout
+            android:background="@drawable/login_imageview_style"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+               android:layout_centerInParent="true"
+                android:background="@mipmap/login_user"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <EditText
+                android:layout_marginStart="15dp"
+                android:textColorHint="@color/light_gray"
+                android:hint="手机号/身份证号"
+                android:id="@+id/student_login_userName"
+                android:background="@null"
+                android:layout_centerInParent="true"
+                android:textColor="@color/textColor_gray"
+                android:textSize="@dimen/text_size16"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="7"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/login_edittext_style"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <RelativeLayout
+            android:background="@drawable/login_imageview_style"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:background="@mipmap/login_pas"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <EditText
+                android:layout_marginStart="15dp"
+                android:textColorHint="@color/light_gray"
+                android:hint="初始密码身份证后6位"
+                android:id="@+id/student_login_password"
+                android:background="@null"
+                android:layout_centerInParent="true"
+                android:textColor="@color/textColor_gray"
+                android:textSize="@dimen/text_size16"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="7"
+        android:orientation="horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <RelativeLayout
+            android:background="@drawable/edit_text_background"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <EditText
+                android:maxLines="1"
+                android:layout_marginStart="15dp"
+                android:textColorHint="@color/light_gray"
+                android:hint="验证码"
+                android:id="@+id/student_login_code"
+                android:background="@null"
+                android:layout_centerInParent="true"
+                android:textColor="@color/textColor_gray"
+                android:textSize="@dimen/text_size16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@drawable/edit_text_background"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/student_login_iv"
+                android:scaleType="fitXY"
+                android:src="@mipmap/verify_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/student_login_btn"
+        android:background="@drawable/btnstyle"
+        android:textColor="@color/textColor_whit"
+        android:text="@string/login"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/student_forget_password"
+            android:textColor="@color/textColor_whit"
+            android:id="@+id/student_forget_password" />
+
+        <TextView
+            android:id="@+id/student_learn_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/student_learn_car"
+            android:textColor="@color/textColor_whit"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+
+</LinearLayout>

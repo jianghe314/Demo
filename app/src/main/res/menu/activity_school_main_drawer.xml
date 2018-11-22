@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/school_acount_manage"
+            android:icon="@mipmap/school_drawer_acount"
+            android:title="@string/school_drawer_acount" />
+        <item
+            android:id="@+id/school_info"
+            android:icon="@mipmap/school_unit_info"
+            android:title="@string/school_drawer_Info" />
+        <item
+            android:id="@+id/school_add_acount"
+            android:icon="@mipmap/school_add_acount"
+            android:title="@string/school_add_acount" />
+        <item
+            android:id="@+id/school_change_psd"
+            android:icon="@mipmap/change_password"
+            android:title="@string/schoo_change_psd" />
+        <item
+            android:id="@+id/school_logout"
+            android:icon="@mipmap/logout"
+            android:title="@string/school_logout" />
+
+    </group>
+
+
+
+</menu>

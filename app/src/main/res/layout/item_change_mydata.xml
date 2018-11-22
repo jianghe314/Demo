@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="200dp" android:padding="20dp" >
+    <LinearLayout
+        android:background="@drawable/text_background5"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <RelativeLayout
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/item_change_mydata_phone"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:layout_margin="5dp"
+                android:inputType="phone"
+                android:background="@null"
+                android:hint="请输入手机号码"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:background="@color/light_gray"
+            android:layout_width="0.7dp"
+            android:layout_height="match_parent"/>
+        <RelativeLayout
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="@color/texColor_Text"
+                android:layout_centerVertical="true"
+                android:id="@+id/item_change_mydata_code"
+                android:layout_centerInParent="true"
+                android:text="获取验证码"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/item_change_mydata_getCode"
+        android:hint="验证码"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_background5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <Button
+            android:id="@+id/item_change_mydata_sure"
+            android:background="@drawable/btnstyle"
+            android:textColor="@color/textColor_whit"
+            android:text="确认修改"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

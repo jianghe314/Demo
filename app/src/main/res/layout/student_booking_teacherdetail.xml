@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/textColor_whit">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+        <ImageView
+            android:background="@drawable/mydata_background"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+        <RelativeLayout
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/teacher_detail_header"
+                android:layout_centerHorizontal="true"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+            <TextView
+                android:id="@+id/teacher_detail_school"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="100dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@drawable/text_background1"
+                android:textColor="@color/textColor_whit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/teacher_detail_name"
+            android:textColor="@color/textColor_black"
+            android:layout_marginTop="140dp"
+            android:layout_centerHorizontal="true"
+            android:text="张三"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <View
+        android:layout_margin="10dp"
+        android:background="@color/main_login_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/teacher_detail_myself"
+            android:lineSpacingMultiplier="1.2"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:layout_marginTop="10dp"
+        android:background="@color/main_login_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"/>
+    <View
+        android:background="@color/background_color"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+    <View
+        android:background="@color/main_login_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/location"
+            android:layout_width="28dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:textColor="@color/textColor_black"
+            android:layout_marginLeft="40dp"
+            android:layout_centerVertical="true"
+            android:text="训练场地"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:background="@color/main_login_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/teacher_detail_address"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:background="@color/main_login_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"/>
+    <View
+        android:background="@color/main_login_bgc"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+    <View
+        android:background="@color/main_login_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/kecheng"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:textColor="@color/textColor_black"
+            android:layout_marginLeft="40dp"
+            android:layout_centerVertical="true"
+            android:text="课程选择"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:background="@color/main_login_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/teacher_detail_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+    <View
+        android:background="@color/main_login_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"/>
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/teacher_detail_lesson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+    <View
+        android:background="@color/main_login_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"/>
+    <Button
+        android:id="@+id/teacher_choiceLesson_send"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btnstyle"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="预约"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

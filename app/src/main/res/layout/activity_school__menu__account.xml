@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="50"
+    tools:context="com.kangzhan.student.School.SlideMenu.School_Menu_Account">
+
+   <android.support.v7.widget.Toolbar
+       android:id="@+id/school_menu_account_toolbar"
+       android:layout_width="match_parent"
+       android:layout_height="?attr/actionBarSize"
+       android:background="@color/colorPrimary"
+       android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+       app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+   </android.support.v7.widget.Toolbar>
+   <LinearLayout
+       android:layout_weight="4"
+       android:background="@color/background_color"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="0dp">
+      <RelativeLayout
+          android:layout_weight="1"
+          android:layout_width="0dp"
+          android:layout_height="match_parent">
+         <TextView
+             android:layout_centerInParent="true"
+             android:text="@string/school_accountM_name"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+      </RelativeLayout>
+      <RelativeLayout
+          android:layout_weight="1"
+          android:layout_width="0dp"
+          android:layout_height="match_parent">
+         <TextView
+             android:layout_centerInParent="true"
+             android:text="@string/school_accountM_phone"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+      </RelativeLayout>
+      <RelativeLayout
+          android:layout_weight="1"
+          android:layout_width="0dp"
+          android:layout_height="match_parent">
+         <TextView
+             android:layout_centerInParent="true"
+             android:text="@string/school_accountM_work"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+      </RelativeLayout>
+   </LinearLayout>
+   <View
+       android:background="@color/color_line"
+       android:layout_width="match_parent"
+       android:layout_height="0.7dp"/>
+   <RelativeLayout
+       android:background="@color/background_color"
+       android:layout_weight="42"
+       android:layout_width="match_parent"
+       android:layout_height="0dp">
+      <!--item为:item_school_account_manage-->
+      <com.holenzhou.pullrecyclerview.PullRecyclerView
+          android:id="@+id/school_account_manage_recycler"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+      </com.holenzhou.pullrecyclerview.PullRecyclerView>
+   </RelativeLayout>
+   <View
+       android:background="@color/color_line"
+       android:layout_width="match_parent"
+       android:layout_height="0.7dp"/>
+   <RelativeLayout
+       android:background="@color/textColor_whit"
+       android:layout_weight="4"
+       android:layout_width="match_parent"
+       android:layout_height="0dp">
+      <LinearLayout
+          android:id="@+id/school_menu_account_add"
+          android:layout_centerInParent="true"
+          android:orientation="vertical"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+         <ImageView
+             android:layout_gravity="center"
+             android:src="@mipmap/school_add"
+             android:layout_width="18dp"
+             android:layout_height="18dp" />
+         <TextView
+             android:layout_marginTop="3dp"
+             android:textSize="@dimen/text_size12"
+             android:text="新建"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+      </LinearLayout>
+   </RelativeLayout>
+</LinearLayout>

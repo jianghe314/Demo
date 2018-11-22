@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kangzhan.student.CompayManage.SelfRegistManage.AdviseDetailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/compay_self_regist_adviseDetail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include
+                layout="@layout/item_compay_advise_detail_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="20dp"
+                android:layout_margin="20dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/item_compay_advise_reply_container"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/item_compay_advise_reply_sta"
+                            android:padding="10dp"
+                            android:text="状态："
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/item_compay_advise_reply_status"
+                            android:layout_toEndOf="@+id/item_compay_advise_reply_sta"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                    <View
+                        android:background="@color/color_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"/>
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:id="@+id/item_compay_advise_reply_problem_container"
+                        android:focusableInTouchMode="true"
+                        android:focusable="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/item_compay_advise_reply_pro"
+                            android:padding="10dp"
+                            android:text="问题回复："
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:textColor="@color/textColor_gray"
+                            android:background="@null"
+                            android:inputType="textMultiLine"
+                            android:maxLength="80"
+                            android:id="@+id/item_compay_advise_reply_problem"
+                            android:layout_below="@+id/item_compay_advise_reply_pro"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <Button
+                android:visibility="gone"
+                android:id="@+id/item_compay_advise_reply_btn"
+                android:layout_margin="20dp"
+                android:text="回复"
+                android:background="@drawable/btnstyle"
+                android:textColor="@color/textColor_whit"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

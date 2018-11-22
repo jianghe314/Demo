@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/background_color"
+        android:layout_width="match_parent"
+        android:layout_height="25dp">
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:text="合计"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="0"
+            android:id="@+id/teacher_myStudent_sum3"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textColor_red"
+            android:layout_marginEnd="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:text="人次"
+            android:layout_marginEnd="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <com.holenzhou.pullrecyclerview.PullRecyclerView
+        android:id="@+id/teacher_myStudent_l3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.holenzhou.pullrecyclerview.PullRecyclerView>
+</LinearLayout>

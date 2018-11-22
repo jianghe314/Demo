@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="20"
+    android:layout_height="60dp">
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:layout_weight="20"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <ImageView
+                android:id="@+id/ordered_clock"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/clock"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:layout_toEndOf="@+id/ordered_clock"
+                android:id="@+id/ordered_time"
+                android:textSize="@dimen/text_size16"
+                android:layout_marginStart="10dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/ordered_to_pickUp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="@color/textColor_whit"
+                android:background="@drawable/text_background3"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_toEndOf="@+id/ordered_to_pickUp"
+                android:id="@+id/ordered_class"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="@color/textColor_whit"
+                android:background="@drawable/text_background1"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:id="@+id/ordered_price"
+                android:textColor="@color/textColor_whit"
+                android:background="@drawable/price_background"
+                android:layout_width="75dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

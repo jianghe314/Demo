@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/textColor_whit"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <RelativeLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/choice_background"
+            android:layout_weight="8.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/teacher_train_record"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="5dp"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:textColorHint="@color/textColor_gray"
+                android:background="@null"
+                android:layout_centerInParent="true"
+                android:hint="@string/teacher_train_record_searcher_hint"
+                android:id="@+id/school_notice_choiceStu_list_content"
+                android:layout_toEndOf="@+id/teacher_train_record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/school_notice_choiceStu_list_search"
+                android:textColor="@color/colorPrimary"
+                android:layout_centerInParent="true"
+                android:text="@string/teacher_train_searcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:background="@color/background_color"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_weight="10"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <com.holenzhou.pullrecyclerview.PullRecyclerView
+                android:id="@+id/school_notice_choiceStu_list_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--item_school_notice_choice_student-->
+            </com.holenzhou.pullrecyclerview.PullRecyclerView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1.1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <View
+                android:background="@color/color_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:layout_marginStart="110dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/school_notice_choiceStu_list_choice"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/school_notice_choiceStu_list_iv"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/choiceall0"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+                <TextView
+                    android:textSize="@dimen/text_size12"
+                    android:id="@+id/school_notice_choiceStu_list_txt"
+                    android:layout_gravity="center"
+                    android:text="全选"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginEnd="110dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/school_notice_choiceStu_list_sure"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/school_notice_add"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+                <TextView
+                    android:textSize="@dimen/text_size12"
+                    android:layout_gravity="center"
+                    android:text="添加"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

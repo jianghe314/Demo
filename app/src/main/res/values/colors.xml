@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0abee7</color>
+    <color name="colorPrimaryDark">#0abee7</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="toolbar_start_color">#4583cc</color>
+    <color name="toolbar_end_color">#41bbe0</color>
+
+    <!--注册主题颜色-->
+    <color name="regist_Primary">#f3f7fa</color>
+    <color name="regist_PrimaryDark">#f3f7fa</color>
+
+    <!--背景颜色-->
+    <color name="login_background_clor">#e9f6f9</color>
+    <color name="main_login_bgc">#f9f9f8</color>
+    <color name="main_login_line">#e0e0e0</color>
+    <color name="main_login_click">#f8f6f5</color>
+    <!--字体背景颜色-->
+    <color name="text_background_color_aqua">#89cc6f</color>
+    <color name="wechat_color">#15c415</color>
+    <!--分割线颜色-->
+    <color name="line_space_color">#039abc</color>
+
+    <!--自定义颜色-->
+    <color name="textColor">#353434</color>
+    <color name="textColor_evaluation">#0abee7</color>
+    <color name="texColor_Text">#6e6d6d</color>
+    <color name="textColor_gray">#9a9a9a</color>
+    <color name="light_gray">#cac8c8</color>
+    <color name="login_picbgc">#dddddd</color>
+    <color name="background_color1">#f2f2f2</color>
+    <color name="background_color">#f8f8f8</color>
+    <color name="textColor_whit">#ffffff</color>
+    <color name="textColor_red">#ed0909</color>
+    <color name="textColor_orange">#f27c58</color>
+    <color name="textColor_yellow">#f3c02c</color>
+    <color name="textColor_black">#2c2c2c</color>
+    <color name="textColor_lightGreen">#d4f2fa</color>
+    <color name="school_tag_bg">#c7e9f3</color>
+    <color name="color_line">#e9e9e9</color>
+    <!--swipe刷新颜色-->
+    <color name="swipe_color1">#ff001e</color>
+    <color name="swipe_color2">#fff000</color>
+    <color name="swipe_color3">#0abee7</color>
+    <!--提示阅读颜色-->ff4e00
+    <color name="Not_read_color">#ff4e00</color>
+    <color name="awef">#378dbf</color>
+    <color name="findlogin_bg">#f1efeb</color>
+</resources>

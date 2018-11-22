@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/login_background_clor"
+    tools:context="com.kangzhan.student.com.RegisterActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/teacher_studentRegist_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/student_header"
+                        android:id="@+id/regist_header"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+                    <TextView
+                        android:text="学员注册"
+                        android:id="@+id/regist_who"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size18"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/register"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <RelativeLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_marginEnd="40dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignTop="@+id/regist_tv1"
+                            android:id="@+id/regist_iv1"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@mipmap/must" />
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:id="@+id/regist_tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="姓名：" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <EditText
+                            android:inputType="text"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/regist_editview"
+                            android:id="@+id/regist_userName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <RelativeLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_marginEnd="70dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:id="@+id/regist_iv2"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@mipmap/must" />
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:id="@+id/regist_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="手机号码：" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:maxLength="11"
+                            android:inputType="phone"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/regist_editview"
+                            android:id="@+id/regist_userPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <RelativeLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_alignParentEnd="true"
+                            android:id="@+id/regist_tv3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="QQ：" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:inputType="number"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/regist_editview"
+                            android:id="@+id/regist_userPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <RelativeLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_alignParentEnd="true"
+                            android:id="@+id/regist_tv4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="邮箱：" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:inputType="textEmailAddress"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/regist_editview"
+                            android:id="@+id/regist_qq"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <RelativeLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_alignParentEnd="true"
+                            android:id="@+id/regist_tv5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="微信：" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:inputType="text"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/regist_editview"
+                            android:id="@+id/regist_wechat"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <RelativeLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_marginEnd="40dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/regist_iv6"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@mipmap/must" />
+                        <TextView
+                            android:layout_alignParentEnd="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="地址："
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_weight="9"
+                            android:textSize="@dimen/text_size14"
+                            android:padding="3dp"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/regist_editview"
+                            android:id="@+id/regist_address"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent" />
+                        <ImageView
+                            android:layout_weight="1"
+                            android:id="@+id/regist_choice_address"
+                            android:src="@mipmap/arrow_dn"
+                            android:background="@drawable/regist_editview"
+                            android:layout_toEndOf="@+id/regist_address"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <RelativeLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_marginEnd="55dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignTop="@+id/regist_tv7"
+                            android:id="@+id/regist_iv7"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@mipmap/must" />
+                        <TextView
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/regist_tv7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="验证码：" />
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_weight="5"
+                            android:textSize="@dimen/text_size14"
+                            android:padding="3dp"
+                            android:inputType="text"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/regist_editview"
+                            android:id="@+id/regist_code"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent" />
+                        <ImageView
+                            android:layout_weight="5"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/verify_code"
+                            android:id="@+id/regist_code_iv"
+                            android:layout_toEndOf="@+id/regist_code"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/regist_btn"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/btnstyle"
+                    android:textColor="@color/textColor_whit"
+                    android:text="@string/regist"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp">
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/regist_lawRule_read"
+                        android:src="@mipmap/unagress_rule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:textSize="@dimen/text_size12"
+                        android:layout_gravity="center_vertical"
+                        android:text="服务通知"
+                        android:id="@+id/regist_lawRule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

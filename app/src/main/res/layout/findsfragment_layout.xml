@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/finds_title"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_centerInParent="true"
+                android:maxLines="1"
+                android:drawablePadding="5dp"
+                android:textSize="@dimen/text_size16"
+                android:textColor="@color/textColor_whit"
+                android:text="---"
+                android:drawableEnd="@mipmap/arr_down_white"
+                android:id="@+id/finds_location_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="2"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/search_bg"
+            android:layout_width="0dp"
+            android:layout_height="30dp">
+
+            <ImageView
+                android:id="@+id/finds_search_iv"
+                android:layout_marginStart="10dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/search"
+                android:layout_width="18dp"
+                android:layout_height="18dp" />
+            <EditText
+                android:id="@+id/finds_search_et"
+                android:textSize="@dimen/text_size14"
+                android:layout_marginStart="10dp"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:layout_toEndOf="@+id/finds_search_iv"
+                android:hint="@string/search_school"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:id="@+id/findsfrgment_by_search"
+            android:textSize="@dimen/text_size16"
+            android:text="@string/teacher_train_searcher"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textColor_whit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="38dp">
+            <RelativeLayout
+                android:clickable="true"
+                android:id="@+id/findsfrgment_by_remark"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/findsfrgment_by_remark_tv"
+                    android:textColor="@color/textColor_black"
+                    android:textSize="@dimen/text_size16"
+                    android:layout_centerInParent="true"
+                    android:text="@string/order_remark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/textColor_gray"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+            <RelativeLayout
+                android:clickable="true"
+                android:id="@+id/findsfrgment_by_distence"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/findsfrgment_by_distance_tv"
+                    android:textColor="@color/textColor_black"
+                    android:textSize="@dimen/text_size16"
+                    android:layout_centerInParent="true"
+                    android:text="@string/order_distence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_marginStart="50dp"
+            android:id="@+id/findsfrgment_order_tag"
+            android:background="@color/colorPrimary"
+            android:layout_width="100dp"
+            android:layout_height="1dp"/>
+        <View
+            android:background="@color/color_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/findsfrgment_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+
+
+
+</LinearLayout>

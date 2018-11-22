@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kangzhan.student.Advisetment.RecommendInstActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/recommend_inst_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@drawable/recommend_inst"
+                android:layout_width="match_parent"
+                android:layout_height="120dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:src="@drawable/recommend_inst_iv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="134dp"
+                    android:layout_marginTop="49dp"
+                    android:src="@mipmap/recommend_inst_num1"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true" />
+                <TextView
+                    android:textSize="@dimen/text_size20"
+                    android:textColor="@color/colorPrimary"
+                    android:text="申请"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="31dp"
+                    android:id="@+id/textView10"
+                    android:layout_alignBottom="@+id/imageView6"
+                    android:layout_alignStart="@+id/imageView6" />
+                <TextView
+                    android:textSize="@dimen/text_size16"
+                    android:text="学员发起陪练申请"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView6"
+                    android:layout_alignStart="@+id/imageView6"
+                    android:layout_marginTop="10dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:src="@drawable/recommend_inst_iv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+                <ImageView
+                    android:src="@mipmap/recommend_inst_num2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="47dp"
+                    android:id="@+id/imageView7"
+                    android:layout_marginStart="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:text="抢单"
+                    android:textSize="@dimen/text_size20"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:layout_alignBottom="@+id/imageView7"
+                    android:layout_toEndOf="@+id/imageView7" />
+                <TextView
+                    android:text="教练收到消息并抢单"
+                    android:textSize="@dimen/text_size16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView16"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/imageView7"
+                    android:layout_alignStart="@+id/imageView7" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:src="@drawable/recommend_inst_iv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+                <ImageView
+                    android:id="@+id/imageView61"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="134dp"
+                    android:layout_marginTop="49dp"
+                    android:src="@mipmap/recommend_inst_num3"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true" />
+                <TextView
+                    android:textSize="@dimen/text_size20"
+                    android:textColor="@color/colorPrimary"
+                    android:text="陪练"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="31dp"
+                    android:id="@+id/textView11"
+                    android:layout_alignBottom="@+id/imageView61"
+                    android:layout_alignStart="@+id/imageView61" />
+                <TextView
+                    android:textSize="@dimen/text_size16"
+                    android:text="教练按约定时间陪练"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView61"
+                    android:layout_alignStart="@+id/imageView61"
+                    android:layout_marginTop="10dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:src="@drawable/recommend_inst_iv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+                <ImageView
+                    android:src="@mipmap/recommend_inst_num4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="48dp"
+                    android:id="@+id/imageView71"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/textView161" />
+                <TextView
+                    android:text="互评"
+                    android:textSize="@dimen/text_size20"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView17"
+                    android:layout_alignBottom="@+id/imageView71"
+                    android:layout_alignStart="@+id/textView161"
+                    android:layout_marginStart="30dp" />
+                <TextView
+                    android:text="学员确认陪练并付款"
+                    android:textSize="@dimen/text_size16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="34dp"
+                    android:id="@+id/textView161"
+                    android:layout_marginTop="14dp"
+                    android:layout_below="@+id/imageView71"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:textSize="@dimen/text_size16"
+                    android:text="双方互评"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView161"
+                    android:layout_alignStart="@+id/textView161"
+                    android:layout_marginTop="7dp"
+                    android:id="@+id/textView7" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

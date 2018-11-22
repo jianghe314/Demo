@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:background="@color/textColor_whit">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageView
+            android:scaleType="fitXY"
+            android:src="@drawable/join_dialog_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textSize="@dimen/text_size28"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerInParent="true"
+            android:text="@string/free_learn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_margin="10dp"
+            android:id="@+id/home_dialog_join_close"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/free_learn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_min_radius_bg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <EditText
+            android:id="@+id/home_dialog_join_name"
+            android:maxLines="1"
+            android:maxLength="8"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textColor_black"
+            android:textSize="@dimen/text_size16"
+            android:hint="@string/teacher_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_min_radius_bg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <EditText
+            android:id="@+id/home_dialog_join_phone"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:maxLength="11"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textColor_black"
+            android:textSize="@dimen/text_size16"
+            android:hint="@string/phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_min_radius_bg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <EditText
+            android:id="@+id/home_dialog_join_class"
+            android:maxLines="1"
+            android:maxLength="8"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textColor_black"
+            android:textSize="@dimen/text_size16"
+            android:text="C1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/home_dialog_join_btn"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/textColor_whit"
+        android:text="@string/send_on"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btnstyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+</LinearLayout>

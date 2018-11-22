@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/student_mydata"
+            android:icon="@mipmap/mydata"
+            android:title="我的资料" />
+        <item
+            android:id="@+id/student_mypurse"
+            android:icon="@mipmap/mypurse"
+            android:title="我的钱包" />
+        <item
+            android:id="@+id/student_bookingRecord"
+            android:icon="@mipmap/booking"
+            android:title="预约订单" />
+        <item
+            android:id="@+id/student_learnHour"
+            android:icon="@mipmap/learn"
+            android:title="学时记录" />
+        <item
+            android:id="@+id/student_exam"
+            android:icon="@mipmap/exam"
+            android:title="考试成绩" />
+        <item
+            android:id="@+id/student_test"
+            android:icon="@mipmap/test"
+            android:title="模拟成绩" />
+        <item
+            android:id="@+id/student_advise"
+            android:icon="@mipmap/advise"
+            android:title="投诉建议" />
+        <item
+            android:id="@+id/student_changePassword"
+            android:icon="@mipmap/change_password"
+            android:title="修改密码" />
+        <item
+            android:id="@+id/student_logout"
+            android:icon="@mipmap/logout"
+            android:title="退出登录" />
+    </group>
+</menu>

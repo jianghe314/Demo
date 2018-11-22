@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp">
+    <RelativeLayout
+        android:layout_weight="0.8"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_centerInParent="true"
+            android:id="@+id/child_tv1"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/textColor_whit"
+            android:background="@drawable/btnstyle0"
+            android:text="培训记录"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_weight="1.5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_centerInParent="true"
+            android:text="17-05-25 07:01"
+            android:id="@+id/child_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_weight="0.8"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="湘A8888"
+            android:layout_centerInParent="true"
+            android:id="@+id/child_car_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_weight="0.5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_centerInParent="true"
+            android:text="科三"
+            android:id="@+id/child_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

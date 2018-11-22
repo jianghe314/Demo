@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:layout_margin="10dp">
+    <ImageView
+        android:id="@+id/item_recomend_school_iv"
+        android:src="@drawable/banner"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/item_recomend_school_name"
+        android:text="联成驾校"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:src="@mipmap/login_location"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/item_recomend_school_location"
+            android:layout_marginLeft="30dp"
+            android:layout_centerVertical="true"
+            android:text="长沙市岳麓区王家湾连城驾校"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:src="@mipmap/call_phone"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/item_recomend_school_phoneNum"
+            android:layout_marginLeft="30dp"
+            android:layout_centerVertical="true"
+            android:text="400-820-55555"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

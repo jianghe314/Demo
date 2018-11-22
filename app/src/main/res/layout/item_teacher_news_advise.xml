@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="81dp" android:weightSum="5">
+    <View
+        android:background="@color/background_color"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+    <View
+        android:background="@color/light_gray"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="20"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+        <RelativeLayout
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:src="@mipmap/teacher_advise"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_weight="16"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/teacher_news_advise_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/teacher_news_advise_content"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size18"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/teacher_news_advise_r1"
+            android:background="@color/Not_read_color"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/teacher_news_advise_stastu"
+                android:layout_centerInParent="true"
+                android:textColor="@color/textColor_whit"
+                android:gravity="center"
+                android:ems="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:background="@color/light_gray"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+
+</LinearLayout>

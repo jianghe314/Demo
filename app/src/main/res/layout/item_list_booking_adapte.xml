@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="100.7dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <View
+            android:id="@+id/booking_colorLine"
+            android:background="@color/textColor_red"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"/>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/booking_iv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:singleLine="true"
+                android:id="@+id/booking_school"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/booking_iv"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/text_background1"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+        <LinearLayout
+            android:padding="5dp"
+            android:weightSum="3"
+            android:orientation="vertical"
+            android:layout_weight="8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <ImageView
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/booking_sex"
+                    android:src="@mipmap/boy"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_toEndOf="@+id/booking_sex"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/booking_name"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@+id/booking_name"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/booking_evalu"
+                    android:background="@drawable/text_background2"
+                    android:textColor="@color/textColor_evaluation"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/imageView"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@mipmap/clock"
+                    android:layout_toStartOf="@+id/booking_year"
+                    android:layout_marginEnd="1dp" />
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/booking_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <ImageView
+                    android:id="@+id/booking_ctv"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/car"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp" />
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_toEndOf="@+id/booking_ctv"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/booking_car"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/booking_line"
+                    android:layout_toEndOf="@+id/booking_car"
+                    android:layout_centerVertical="true"
+                    android:background="#6b6a65"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:layout_toEndOf="@+id/booking_line"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/booking_label"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/booking_phone"
+                    android:layout_width="18dp"
+                    android:layout_height="20dp"
+                    android:background="@mipmap/phone"
+                    android:layout_toStartOf="@+id/booking_phone_Num"
+                    android:layout_marginEnd="1dp" />
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/booking_phone_Num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <ImageView
+                    android:id="@+id/booking_rt"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/location"
+                    android:layout_width="18dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:maxLines="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toEndOf="@+id/booking_rt"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/booking_address"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/light_gray"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"/>
+
+</LinearLayout>

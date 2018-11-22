@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="80dp" android:weightSum="20">
+    <RelativeLayout
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/item_classFragment_list2_choice"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/student_test_choice"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:layout_weight="17"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/item_classFragment_list2_time"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/item_classFragment_list2_rest"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/item_classFragment_list2_time"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/item_classFragment_list2_lesson"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/item_classFragment_list2_carType"
+                android:layout_toEndOf="@+id/item_classFragment_list2_lesson"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/item_classFragment_list2_carLabel"
+                android:layout_toEndOf="@+id/item_classFragment_list2_carType"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/item_classFragment_list2_price"
+                android:layout_toEndOf="@+id/item_classFragment_list2_carLabel"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<resources>
+    <!--app引导界面主题-->
+    <!--<style name="GuideTheme" parent="LoginTheme">-->
+    <!--<item name="android:windowBackground">@drawable/splash_login</item>-->
+    <!--</style>-->
+    <!--app启动主题-->
+    <style name="SplashTheme" parent="LoginTheme">
+        <item name="android:windowBackground">@drawable/splash_login</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--app主题-->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <!--注册主题-->
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!--自定义登陆主题-->
+    <style name="LoginTheme" parent="AppTheme.NoActionBar" />
+    <!--考试主题-->
+    <style name="ExamTheme" parent="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="BottomMenu">
+        <item name="android:windowEnterAnimation">@anim/popup_in</item>
+        <item name="android:windowExitAnimation">@anim/popup_out</item>
+    </style>
+    <!--头像修改主题-->
+    <style name="ChoiceHeadTheme" parent="Animation.Design.BottomSheetDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowEnterAnimation">@anim/popup_in</item>
+        <item name="android:windowExitAnimation">@anim/popup_out</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <style name="MyDialog" parent="android:style/Theme.Dialog">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊,背景蒙灰-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+</resources>

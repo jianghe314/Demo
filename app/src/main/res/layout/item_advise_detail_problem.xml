@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+            <TextView
+                android:id="@+id/advice_tv1"
+                android:layout_centerVertical="true"
+                android:text="摘要："
+                android:textColor="@color/textColor_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_toEndOf="@+id/advice_tv1"
+                android:id="@+id/notice_receiver"
+                android:layout_centerVertical="true"
+                android:textColor="@color/textColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+            <TextView
+                android:id="@+id/advice_problem_discrib"
+                android:text="问题描述："
+                android:textColor="@color/textColor_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/advice_problem_content"
+                android:lineSpacingMultiplier="1.2"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/advice_problem_discrib"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

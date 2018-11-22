@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="20"
+    tools:context="com.kangzhan.student.Teacher.person_data.Teacher_bill_detail">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/teacher_bill_detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:background="@color/background_color"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:text="2017年3月"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/teacher_bill_detail_year_month"
+            android:layout_marginStart="9dp"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <View
+        android:background="@color/light_gray"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/teacher_bill_detail_Num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="5"
+                android:textColor="@color/textColor_red"
+                android:textSize="@dimen/text_size28" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:text="合计培训(学时)"
+                android:textSize="@dimen/text_size14" />
+        </RelativeLayout>
+
+        <View
+            android:layout_gravity="center"
+            android:layout_width="1dp"
+            android:layout_height="70dp"
+            android:background="@color/light_gray" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/teacher_bill_detail_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="8"
+                android:textColor="@color/textColor_red"
+                android:textSize="@dimen/text_size28" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:text="费用(元)"
+                android:textSize="@dimen/text_size14" />
+        </RelativeLayout>
+        <View
+            android:layout_gravity="center"
+            android:layout_width="1dp"
+            android:layout_height="70dp"
+            android:background="@color/light_gray" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/teacher_bill_detail_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="8"
+                android:textColor="@color/textColor_red"
+                android:textSize="@dimen/text_size28" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:text="平台抽成(元)"
+                android:textSize="@dimen/text_size14" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:background="@color/light_gray"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"/>
+    <View
+        android:background="@color/background_color"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <RelativeLayout
+        android:layout_weight="13"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <com.holenzhou.pullrecyclerview.PullRecyclerView
+            android:id="@+id/teacher_bill_detail_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.holenzhou.pullrecyclerview.PullRecyclerView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <Button
+            android:id="@+id/teacher_bill_detail_btn"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btnstyle"
+            android:textColor="@color/textColor_whit"
+            android:text="确认"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

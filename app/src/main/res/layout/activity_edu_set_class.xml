@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="20"
+    tools:context="com.kangzhan.student.School.Edu.EduSetClassActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/school_edu_stuManage_setClass"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_weight="17"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <com.holenzhou.pullrecyclerview.PullRecyclerView
+            android:id="@+id/edu_stuM_setClass_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--item为：item_school_edu_setclass-->
+        </com.holenzhou.pullrecyclerview.PullRecyclerView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <Button
+            android:id="@+id/edu_stuM_setClass_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/btnstyle"
+            android:text="确定"
+            android:textColor="@color/textColor_whit" />
+    </RelativeLayout>
+
+</LinearLayout>

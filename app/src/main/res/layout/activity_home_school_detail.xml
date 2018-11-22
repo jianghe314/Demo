@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color"
+    tools:context="com.kangzhan.student.HomeFragment.activities.HomeSchoolDetailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/home_school_detail_back"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_below="@+id/home_school_detail_back"
+        android:id="@+id/home_school_detail_scrollview"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="240dp">
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/home_school_detail_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp" />
+
+                <RelativeLayout
+                    android:layout_marginBottom="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/home_school_name_bg"
+                    android:layout_width="250dp"
+                    android:layout_height="70dp">
+                    <TextView
+                        android:id="@+id/home_school_detail_school_name"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/textColor_black"
+                        android:textSize="@dimen/text_size20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="@dimen/text_size14"
+                        android:id="@+id/home_school_detail_phone"
+                        android:drawablePadding="5dp"
+                        android:drawableStart="@mipmap/phone_red"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/home_school_detail_qq"
+                        android:textSize="@dimen/text_size14"
+                        android:drawablePadding="5dp"
+                        android:drawableStart="@mipmap/qq_yellow"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/home_school_detail_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+            <View
+                android:background="@color/color_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+            <RelativeLayout
+                android:paddingStart="10dp"
+                android:background="@color/textColor_whit"
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="5dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:layout_marginStart="15dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/school_detail"
+                    android:textSize="@dimen/text_size16"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:background="@color/textColor_whit"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:background="@drawable/dot_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+                <TextView
+                    android:id="@+id/home_school_indua_tv"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/home_school_more_tv"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="end"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size16"
+                    android:text="@string/load_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/dot_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:paddingStart="10dp"
+                android:background="@color/textColor_whit"
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+
+                <TextView
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:layout_centerVertical="true"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:background="@drawable/notice_bg"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/publish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.kangzhan.student.mUI.AutoVerticalScrollTextView
+                    android:id="@+id/home_school_auto_tv"
+                    android:layout_marginStart="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.kangzhan.student.mUI.AutoVerticalScrollTextView>
+
+            </RelativeLayout>
+            <View
+                android:background="@color/color_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/color_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+            <RelativeLayout
+                android:clickable="true"
+                android:id="@+id/home_school_detail_new_activities_container"
+                android:paddingStart="10dp"
+                android:background="@color/textColor_whit"
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+                <ImageView
+
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/gift"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp" />
+                <TextView
+                    android:layout_marginStart="25dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/activities"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/home_school_detail_new_activities"
+                    android:layout_marginStart="100dp"
+                    android:textColor="@color/textColor_red"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_marginEnd="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@mipmap/arrow_right_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:background="@color/color_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+            <RelativeLayout
+                android:clickable="true"
+                android:id="@+id/home_school_detail_place_container"
+                android:paddingStart="10dp"
+                android:background="@color/textColor_whit"
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+                <ImageView
+
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/place"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp" />
+                <TextView
+                    android:layout_marginStart="25dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/home_school_detail_train_place"
+                    android:layout_marginStart="100dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_marginEnd="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@mipmap/arrow_right_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:background="@color/color_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/color_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+            <RelativeLayout
+                android:paddingStart="10dp"
+                android:background="@color/textColor_whit"
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="5dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:layout_marginStart="15dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/class_ind"
+                    android:textSize="@dimen/text_size16"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:background="@color/color_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <!--home_item_school_detail_class_layout-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/home_school_detail_class_list"
+                android:background="@color/textColor_whit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/color_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <RelativeLayout
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:background="@color/textColor_whit"
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="5dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:text="学员点评(0)"
+                    android:id="@+id/home_school_detail_remark_count"
+                    android:layout_marginStart="15dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_size16"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/home_school_detail_remark_more"
+                    android:drawablePadding="5dp"
+                    android:drawableEnd="@mipmap/more"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:background="@color/color_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <android.support.v7.widget.RecyclerView
+                android:background="@color/textColor_whit"
+                android:id="@+id/home_school_detail_remark_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--item:home_school_remark_list_layout-->
+            </android.support.v7.widget.RecyclerView>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/color_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+            <RelativeLayout
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:background="@color/textColor_whit"
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="5dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:text="学员问答(0)"
+                    android:id="@+id/home_school_detail_ques_count"
+                    android:layout_marginStart="15dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_size16"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/home_school_detail_ques_more"
+                    android:drawablePadding="5dp"
+                    android:drawableEnd="@mipmap/more"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <View
+                android:background="@color/color_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+            <android.support.v7.widget.RecyclerView
+                android:background="@color/textColor_whit"
+                android:id="@+id/home_school_detail_question_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--item:home_school_question_list_layout-->
+            </android.support.v7.widget.RecyclerView>
+            <View
+                android:background="@color/color_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/color_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+            <RelativeLayout
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:background="@color/textColor_whit"
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="5dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:layout_marginStart="15dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/want_question"
+                    android:textSize="@dimen/text_size16"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@color/textColor_whit"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+                <EditText
+                    android:id="@+id/home_school_detail_send_edit"
+                    android:textColor="@color/texColor_Text"
+                    android:textSize="@dimen/text_size14"
+                    android:maxLength="50"
+                    android:paddingStart="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:hint="@string/enter_your_que"
+                    android:background="@drawable/text_gray_bg"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp" />
+                <Button
+                    android:id="@+id/home_school_detail_send_btn"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/btnstyle"
+                    android:textColor="@color/textColor_whit"
+                    android:textSize="@dimen/text_size16"
+                    android:text="@string/teacher_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/color_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+           <!-- <LinearLayout
+            android:orientation="horizontal"
+            android:background="@color/textColor_whit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <RelativeLayout
+                android:layout_margin="5dp"
+                android:id="@+id/home_school_linke1"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+
+                    android:id="@+id/home_school_phone_iv"
+                    android:src="@mipmap/phone_gray"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <TextView
+
+                    android:layout_below="@+id/home_school_phone_iv"
+                    android:text="@string/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:gravity="center"
+                android:id="@+id/home_school_linke2"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+
+                    android:id="@+id/home_school_zxun_iv"
+                    android:src="@mipmap/kefu"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <TextView
+
+                    android:layout_below="@+id/home_school_zxun_iv"
+                    android:text="@string/zixun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="@color/text_background_color_aqua"
+                android:gravity="center"
+                android:id="@+id/home_school_linke3"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="@color/textColor_whit"
+                    android:text="@string/free_learn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:clickable="true"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:id="@+id/home_school_linke4"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="@color/textColor_whit"
+                    android:text="@string/want_jini"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>-->
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+
+        android:id="@+id/home_school_help_container"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/with_bgwhite_line_background"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <RelativeLayout
+            android:layout_margin="5dp"
+            android:id="@+id/home_school_linke1"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+
+                android:id="@+id/home_school_phone_iv"
+                android:src="@mipmap/phone_gray"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+
+                android:layout_below="@+id/home_school_phone_iv"
+                android:text="@string/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:gravity="center"
+            android:id="@+id/home_school_linke2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+
+                android:id="@+id/home_school_zxun_iv"
+                android:src="@mipmap/kefu"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+
+                android:layout_below="@+id/home_school_zxun_iv"
+                android:text="@string/zixun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@color/text_background_color_aqua"
+            android:gravity="center"
+            android:id="@+id/home_school_linke3"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="@color/textColor_whit"
+                android:text="@string/free_learn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:clickable="true"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:id="@+id/home_school_linke4"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="@color/textColor_whit"
+                android:text="@string/want_jini"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

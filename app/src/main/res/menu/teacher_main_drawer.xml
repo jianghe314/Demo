@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/teacher_mydata"
+            android:icon="@mipmap/mydata"
+            android:title="我的资料" />
+        <item
+            android:id="@+id/teacher_mystudent"
+            android:icon="@mipmap/teacher_mystudent"
+            android:title="我的学员" />
+        <item
+            android:id="@+id/teacher_mypurse"
+            android:icon="@mipmap/mypurse"
+            android:title="我的钱包" />
+        <item
+            android:id="@+id/teacher_reward"
+            android:icon="@mipmap/rward"
+            android:title="合格奖" />
+        <item
+            android:id="@+id/teacher_msg"
+            android:icon="@mipmap/msg"
+            android:title="短信结算" />
+        <item
+            android:id="@+id/teacher_bill"
+            android:icon="@mipmap/teacher_bill"
+            android:title="我的账单" />
+        <item
+            android:id="@+id/teacher_addadvise"
+            android:icon="@mipmap/teacher_addadvise"
+            android:title="新增工单"/>
+        <item
+            android:id="@+id/teacher_chang_password"
+            android:icon="@mipmap/change_password"
+            android:title="修改密码" />
+        <item
+            android:id="@+id/teacher_logout"
+            android:icon="@mipmap/logout"
+            android:title="退出登录" />
+    </group>
+</menu>

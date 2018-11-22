@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="180dp" android:padding="10dp">
+
+    <EditText
+        android:id="@+id/compay_dele_edt"
+        android:textColor="@color/textColor_gray"
+        android:padding="5dp"
+        android:hint="请输入删除理由！"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:maxLines="80"
+        android:background="@drawable/edit_text_background"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+    <Button
+        android:id="@+id/compay_dele_btn"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btnstyle"
+        android:textColor="@color/textColor_whit"
+        android:text="确定"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+</LinearLayout>

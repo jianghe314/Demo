@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kangzhan.student.Teacher.person_data.Mydata">
+
+    <android.support.v7.widget.Toolbar
+    android:id="@+id/teacher_mydata_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.constraint.ConstraintLayout
+                android:background="@color/background_color"
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+                <ImageView
+                    android:background="@drawable/mydata_background"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    android:id="@+id/imageView4"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/teacher_mydata_header"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/header"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginLeft="8dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginRight="8dp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498" />
+            </android.support.constraint.ConstraintLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="#15ff00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:background="@color/textColor_whit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:textSize="@dimen/text_size16"
+                        android:layout_marginStart="20dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/teacher_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/teacher_mydata_name"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:layout_marginLeft="130dp"
+                        android:textSize="@dimen/text_size16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:background="@color/background_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:textSize="@dimen/text_size16"
+                        android:layout_marginStart="20dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/teacher_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:enabled="false"
+                        android:id="@+id/teacher_mydata_sex"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:layout_marginLeft="130dp"
+                        android:textSize="@dimen/text_size16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:background="@color/textColor_whit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:textSize="@dimen/text_size16"
+                        android:layout_marginStart="20dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/teacher_phone_Num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_marginBottom="20dp"
+                        android:enabled="false"
+                        android:id="@+id/teacher_mydata_Phone"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:layout_marginLeft="130dp"
+                        android:textSize="@dimen/text_size16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:background="@color/background_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:textSize="@dimen/text_size16"
+                        android:layout_marginStart="20dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/teacher_home_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_marginBottom="20dp"
+                        android:enabled="false"
+                        android:id="@+id/teacher_mydata_address"
+                        android:singleLine="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:layout_marginLeft="130dp"
+                        android:textSize="@dimen/text_size16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:background="@color/textColor_whit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:textSize="@dimen/text_size16"
+                        android:layout_marginStart="20dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/teacher_qq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_marginBottom="20dp"
+                        android:enabled="false"
+                        android:id="@+id/teacher_mydata_qq"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:layout_marginLeft="130dp"
+                        android:textSize="@dimen/text_size16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:background="@color/background_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:textSize="@dimen/text_size16"
+                        android:layout_marginStart="20dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/teacher_wechat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_marginBottom="20dp"
+                        android:enabled="false"
+                        android:id="@+id/teacher_mydata_wechat"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:layout_marginLeft="130dp"
+                        android:textSize="@dimen/text_size16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:background="@color/textColor_whit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:textSize="@dimen/text_size16"
+                        android:layout_marginStart="20dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/teacher_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_marginBottom="20dp"
+                        android:enabled="false"
+                        android:id="@+id/teacher_mydata_email"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:layout_marginLeft="130dp"
+                        android:textSize="@dimen/text_size16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:background="@color/background_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:textSize="@dimen/text_size16"
+                        android:layout_marginStart="20dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/teacher_diver_ID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_marginBottom="20dp"
+                        android:enabled="false"
+                        android:id="@+id/teacher_mydata_ID"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:layout_marginLeft="130dp"
+                        android:textSize="@dimen/text_size16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:background="@color/textColor_whit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:textSize="@dimen/text_size16"
+                        android:layout_marginStart="20dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/teacher_car_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_marginBottom="20dp"
+                        android:enabled="false"
+                        android:id="@+id/teacher_mydata_carInfo"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:layout_marginLeft="130dp"
+                        android:textSize="@dimen/text_size16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:background="@color/background_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:textSize="@dimen/text_size16"
+                        android:layout_marginStart="20dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/teacher_train"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/teacher_mydata_train"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:layout_marginLeft="130dp"
+                        android:textSize="@dimen/text_size16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:background="@color/textColor_whit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:textSize="@dimen/text_size16"
+                        android:layout_marginStart="20dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/teacher_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_marginBottom="20dp"
+                        android:enabled="false"
+                        android:id="@+id/teacher_mydata_price"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:layout_marginLeft="130dp"
+                        android:textSize="@dimen/text_size16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:background="@color/background_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:textSize="@dimen/text_size16"
+                        android:layout_marginStart="20dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/teacher_evluation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/teacher_mydata_eval"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:layout_marginLeft="130dp"
+                        android:textSize="@dimen/text_size16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:background="@color/textColor_whit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:textSize="@dimen/text_size16"
+                        android:layout_marginStart="20dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/teacher_school"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/teacher_mydata_school"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:layout_marginLeft="130dp"
+                        android:textSize="@dimen/text_size16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <Button
+                android:enabled="false"
+                android:id="@+id/teacher_mydata_save"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/textColor_whit"
+                android:background="@drawable/btnstyle"
+                android:text="确定"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+</LinearLayout>

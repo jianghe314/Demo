@@ -1,0 +1,462 @@
+<resources>
+    <string name="app_name">康展学车</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="toolbar_scan">Settings</string>
+    <string name="guide_exp">立即体验</string>
+    <string name="login">登录</string>
+    <string name="regist">立即注册</string>
+    <string name="space">""</string>
+
+    <!--首页-->
+    <string name="home">首页</string>
+    <string name="find_s">找驾校</string>
+    <string name="find_t">找教练</string>
+    <string name="s_tag">择优挑选驾校</string>
+    <string name="t_tag">化被动为主动</string>
+    <string name="search_school">搜驾校</string>
+    <string name="search_teacher">搜教练</string>
+    <string name="guess_like">猜你喜欢</string>
+    <string name="school">驾校</string>
+    <string name="teacher">教练</string>
+    <string name="order_remark">按好评</string>
+    <string name="order_distence">按距离</string>
+    <string name="school_detail">驾校简介</string>
+    <string name="teacher_detail">教练简介</string>
+    <string name="load_more">更多</string>
+    <string name="publish">公告</string>
+    <string name="activities">最近活动</string>
+    <string name="place">练车场地</string>
+    <string name="class_ind">班别介绍</string>
+    <string name="vip_class">★VIP班</string>
+    <string name="normal_class">★日常班</string>
+    <string name="student_remark">学员点评</string>
+    <string name="student_qus">学员问答(82)</string>
+    <string name="want_question">我要提问</string>
+    <string name="all">全部</string>
+    <string name="enter_your_que">请输入您的问题</string>
+    <string name="phone">电话</string>
+    <string name="class_div">如：C1</string>
+    <string name="zixun">咨询</string>
+    <string name="send_on">提交</string>
+    <string name="free_learn">免费试学</string>
+    <string name="want_jini">我要报名</string>
+    <string name="GPS">当前城市</string>
+    <string name="has_open_city">已开通城市</string>
+    <string name="open_city_name">更多城市正在准备中，敬请期待</string>
+    <string name="reback_tag">提交成功，请等待答复</string>
+    <string name="i_know">我知道了</string>
+    <string name="go_where">去这里</string>
+    <string name="share_person">分享给朋友</string>
+    <string name="share_session">分享朋友圈</string>
+    <string name="cancel">取消</string>
+
+    //
+    <string name="load_done_tip">已全部加载完成</string>
+    <string name="checkbox_text"><Data><![CDATA[我已阅读并同意<font color="#00AAC6"><b>&#060;&#060;服务条款&#062;&#062;</b></font>]]></Data></string>
+    <!--登录-->
+    <string name="main_login_news">驾考资讯</string>
+    <string name="main_login_t11">驾校推介</string>
+    <string name="main_login_t12">教练推介</string>
+    <string name="main_login_t13">陪练流程</string>
+    <string name="main_login_t21">学员登录</string>
+    <string name="main_login_t22">教练登录</string>
+    <string name="main_login_t23">驾校登录</string>
+    <string name="main_login_t31">运管登录</string>
+    <string name="main_login_t32">检测更新</string>
+    <string name="main_login_t33">员工登录</string>
+    <!--忘记密码-->
+    <string name="forgetPas_phoneNum">手机号：</string>
+    <string name="forgetPas_phoneNum_hint">请输入手机号码</string>
+    <string name="forgetPas_phoneNum_getCode">获取验证码</string>
+    <string name="forgetPas_code">验证码：</string>
+    <string name="forgetPas_code_input">请输入验证码</string>
+    <string name="forgetPas_newPas1">新密码：</string>
+    <string name="forgetPas_newPas1_hint">6-16个字符，区分大小写</string>
+    <string name="forgetPas_newPas2">确认新密码：</string>
+    <string name="forgetPas_sure">确认</string>
+    <!--学员-->
+    <string name="student_login_header_name">学员登录</string>
+    <string name="student_forget_password">忘记密码</string>
+    <string name="student_learn_car">我要学车</string>
+    <string name="booking">预约</string>
+    <string name="train">陪练</string>
+    <string name="exam">考试</string>
+    <string name="lesson">课程</string>
+    <string name="news">消息</string>
+    <string name="student_checkNotice">通知查询</string>
+    <string name="student_advise">建议投诉</string>
+    <string name="recorded">我的教练:</string>
+    <string name="recorded_btn">更多教练</string>
+    <string name="btn_sure">确定</string>
+    <string name="teacher_location">训练场地</string>
+    <string name="teacher_class">课程选择</string>
+    <string name="to_PickUp">要接送</string>
+    <string name="duty_PickUp">包接送</string>
+    <string name="choice_excharge_Num">选择充值金额(元)</string>
+    <string name="choice_pay_way">选择支付方式</string>
+    <string name="zhifubao_pay">支付宝</string>
+    <string name="zfb_user">推荐有支付宝账号的用户使用</string>
+    <string name="wechat_pay">微信</string>
+    <string name="wc_user">亿万用户的选择，更快更安全</string>
+
+    <string name="pay_success">支付成功</string>
+    <string name="pay_faile">支付被取消</string>
+    <string name="pay_error">支付失败</string>
+
+    <!--教练-->
+    <string name="teacher_login_header_name">教练登录</string>
+    <string name="teacher_join_us">教练加盟</string>
+    <string name="teacher_name">姓名</string>
+    <string name="teacher_sex">性别</string>
+    <string name="teacher_phone_Num">手机号码</string>
+    <string name="teacher_home_address">家庭住址</string>
+    <string name="teacher_qq">QQ号</string>
+    <string name="teacher_wechat">微信号</string>
+    <string name="teacher_email">邮箱</string>
+    <string name="teacher_diver_ID">教练证</string>
+    <string name="teacher_car_info">车辆信息</string>
+    <string name="teacher_train">训练阶段</string>
+    <string name="teacher_price">课程单价</string>
+
+    <string name="teacher_booking1">正在培训</string>
+    <string name="teacher_booking2">待培训</string>
+    <string name="teacher_booking3">已培训</string>
+    <string name="teacher_studentAbsence">学员缺课</string>
+    <string name="teacher_startTrain">开始培训</string>
+    <string name="teacher_endTrain">结束陪练</string>
+    <string name="teacher_train_searcher">搜索</string>
+
+    <string name="teacher_evluation">累计评分</string>
+    <string name="teacher_school">所属驾校</string>
+    <string name="teacher_booking_sum">合计</string>
+    <string name="teacher_booking_person">人次</string>
+    <string name="teacher_booking_hours">小时</string>
+    <string name="checkloadmore">查看更多</string>
+    <string name="teacher_student_remark_hint">说说您对这位学员的总体评价吧</string>
+    <string name="isPickUp">要接送</string>
+    <string name="have_id">有证</string>
+    <string name="no_id">无证</string>
+    <string name="link_ta">联系Ta</string>
+    <string name="link_student">联系学员</string>
+    <string name="pick_order">接单</string>
+    <string name="teacher_train_record_searcher_hint">请输入查询字段</string>
+    <string name="news_title1">通知查询</string>
+    <string name="news_title2">服务工单</string>
+    <string name="news_title3">发送通知</string>
+    <string name="news_title4">短信发送</string>
+    <string name="teacher_new_sendNotice_msg">同时发送短信</string>
+    <string name="teacher_send">发送</string>
+    <string name="teacher_send_object">通知对象：</string>
+    <string name="teacher_who_send">发件人：</string>
+    <string name="teacher_title_send">摘要：</string>
+    <string name="teacher_stastu">状态：</string>
+    <string name="teacher_record_time">登记日期：</string>
+    <string name="teacher_sendT">发送日期：</string>
+    <string name="teacher_send_content">正文：</string>
+
+    <string name="teacher_news_sendMsg">短信内容：</string>
+    <string name="teacher_news_advisedetail_problem">问题描述：</string>
+    <string name="teacher_news_advisedetail_problem_answer">工单回复：</string>
+    <string name="teacher_class_choice_date">日期选择</string>
+
+    <!--侧拉-->
+    <string name="myStudent_list1">按姓名排序</string>
+    <string name="myStudent_list2">按状态排序</string>
+    <string name="myStudent_list3">按车型排序</string>
+
+    <!--驾校登录-->
+    <string name="school_login_header">驾校登录</string>
+    <string name="school_join_us">驾校加盟</string>
+    <string name="school_drawer_acount">账号管理</string>
+    <string name="school_drawer_Info">单位信息</string>
+    <string name="school_add_acount">新增账号</string>
+    <string name="schoo_change_psd">修改密码</string>
+    <string name="school_logout">退出登录</string>
+    <string name="action_settings">Settings</string>
+    <string name="school_edu_manage">教务</string>
+    <string name="school_lesson">课程</string>
+    <string name="school_booking">预约</string>
+    <string name="school_training">陪练</string>
+    <string name="school_acount">账务</string>
+
+    <!--侧拉菜单-->
+    <string name="school_accountM_name">员工姓名</string>
+    <string name="school_accountM_phone">电话号码</string>
+    <string name="school_accountM_work">职务</string>
+
+    <string name="school_code">统一编号</string>
+    <string name="school_name">机构名称</string>
+    <string name="school_linker">联系人</string>
+    <string name="school_phone">联系电话</string>
+    <string name="school_area">经营范围</string>
+    <string name="school_sum_teacher">教练员总数</string>
+    <string name="school_sum_test">考核员总数</string>
+    <string name="school_sum_safe">安全员总数</string>
+    <string name="school_sum_car">教练车总数</string>
+    <string name="school_sum_room">教练总面积</string>
+    <string name="school_sum_roomTheory">理论教室面积</string>
+    <string name="school_sum_practice">教练场总面积</string>
+    <string name="school_rule1">是否可跨驾校预约课程</string>
+    <string name="school_rule2">是否可跨教练预约课程</string>
+    <string name="school_product_lesson">可提前几天约车</string>
+    <string name="school_belong">客服人员</string>
+    <string name="switch_off">不可以</string>
+    <string name="switch_on">可以</string>
+
+    <string name="school_add_account_name">姓名</string>
+    <string name="school_add_account_phone">手机号码</string>
+    <string name="school_add_account_id">身份证号码</string>
+    <string name="school_add_account_psd">密码</string>
+    <string name="school_add_account_email">邮箱</string>
+    <string name="school_add_account_location">省市区</string>
+    <string name="school_add_account_address">详细地址</string>
+    <string name="school_add_account_wc">微信</string>
+    <string name="school_add_account_qq">QQ号</string>
+    <string name="school_add_account_other">备注</string>
+    <string name="school_account">账号</string>
+    <string name="school_account_stastu">状态</string>
+    <string name="school_account_record">登记人</string>
+    <string name="school_account_recordTime">登记日期</string>
+
+    <string name="allocation_teacher">分配教练</string>
+    <string name="allocation_clerk">分配业务员</string>
+    <string name="send_message">发送消息</string>
+    <string name="send_add">新建</string>
+    <string name="set_class">班别设置</string>
+    <string name="delete">删除</string>
+    <string name="prohibit">禁用</string>
+    <string name="setRest">调休新增</string>
+
+    <!--教练详情-->
+    <string name="school_teacher_detail_name">姓名</string>
+    <string name="school_teacher_detail_sex">性别</string>
+    <string name="school_teacher_detail_phone">手机号码</string>
+    <string name="school_teacher_detail_address">地址</string>
+    <string name="school_teacher_detail_wc">微信号</string>
+    <string name="school_teacher_detail_email">邮箱</string>
+    <string name="school_teacher_detail_carType">准教车型</string>
+    <string name="school_teacher_detail_subject">课程名称</string>
+    <string name="school_teacher_detail_price">单价</string>
+    <string name="school_teacher_detail_carLabel">教练车</string>
+    <string name="school_teacher_detail_score">好评分</string>
+    <string name="school_teacher_detail_person">在训学员</string>
+    <string name="school_teacher_detail_reward">合格奖</string>
+
+
+    <!--grade_detail-->
+    <string name="grade_test_name">姓名</string>
+    <string name="grade_test_sex">性别</string>
+    <string name="grade_test_subject">科目</string>
+    <string name="grade_test_time">考试日期</string>
+    <string name="grade_test_score">考试成绩</string>
+    <string name="grade_test_ID">身份证号码</string>
+    <string name="grade_test_carType">申请车型</string>
+    <string name="grade_test_phone">联系电话</string>
+    <string name="grade_test_teacher">教练</string>
+    <string name="grade_test_class">班别</string>
+    <string name="grade_test_find">招生人</string>
+    <!--car_detail-->
+    <string name="car_label">车牌号</string>
+    <string name="car_brand">车辆品牌</string>
+    <string name="car_buyT">购买日期</string>
+    <string name="car_num">发动机号</string>
+    <string name="car_frameN">车架号</string>
+    <string name="car_type">车型</string>
+    <string name="car_teacher">责任教练</string>
+    <string name="car_time_num">计时仪编号</string>
+    <string name="car_area">教学区域</string>
+    <!--class_detail-->
+    <string name="class_name">班别名称</string>
+    <string name="class_day">一天几次</string>
+    <string name="class_week">一周几次</string>
+    <string name="class_price1">折扣</string>
+    <string name="class_price2">可欠费几次</string>
+    <string name="class_3">课欠费金额</string>
+    <string name="class_b">是否跨驾校</string>
+    <string name="class_b1">是否跨教练车</string>
+    <string name="class_time1">开始日期</string>
+    <string name="class_time2">截止日期</string>
+    <string name="class_s">状态</string>
+
+    <string name="eduCarM_label">车牌号</string>
+    <string name="eduCarM_carType">车辆品牌</string>
+    <string name="eduCarM_carE">发动机号</string>
+    <string name="eduCarM_carJ">机架号</string>
+    <string name="eduCarM_carTime">购买日期</string>
+    <string name="eduCarM_carT">车型</string>
+    <string name="eduCarM_carbelong">责任教练</string>
+    <string name="eduCarM_carP">训练场地</string>
+    <string name="eduCarM_carTm">计时终端ID</string>
+
+    <string name="edu_test_detail_name">姓名</string>
+    <string name="edu_test_detail_sex">性别</string>
+    <string name="edu_test_detail_subject">科目</string>
+    <string name="edu_test_detail_time">考试日期</string>
+    <string name="edu_test_detail_grade">考试成绩</string>
+    <string name="edu_test_detail_ID">身份证号码</string>
+    <string name="edu_test_detail_carType">申请车型</string>
+    <string name="edu_test_detail_phone">联系电话</string>
+    <string name="edu_test_detail_teahcer">教练</string>
+    <string name="edu_test_detail_class">班别</string>
+    <string name="edu_test_detail_p">招生人</string>
+
+    <string name="lesson_detail_name">课程名称</string>
+    <string name="lesson_detail_num">一时几人</string>
+    <string name="lesson_detail_hour">学时当量</string>
+    <string name="lesson_detail_teaching">教学阶段</string>
+    <string name="lesson_detail_startT">开始日期</string>
+    <string name="lesson_detail_endT">截止日期</string>
+    <string name="lesson_detail_stastu">状态</string>
+
+    <string name="booking_class_name">班别名称</string>
+    <string name="booking_class_day">一天几次</string>
+    <string name="booking_class_week">一周几次</string>
+    <string name="booking_class_discount">折扣</string>
+    <string name="booking_class_num">可欠费几次</string>
+    <string name="booking_class_amount">可欠费金额</string>
+    <string name="booking_class_school">是否跨驾校</string>
+    <string name="booking_class_teacher">是否跨教练车</string>
+    <string name="booking_class_startT">开始日期</string>
+    <string name="booking_class_endT">截止日期</string>
+    <string name="booking_class_status">状态</string>
+
+    <!--school_accoun_qulified-->
+    <string name="qulified_car">车型</string>
+    <string name="qulified_sTime">生效日期</string>
+    <string name="qulified_eTime">截止日期</string>
+    <string name="qulified_stastu">当前状态</string>
+    <string name="qulified_price">课时费</string>
+    <string name="qulified_keer">科目二设置</string>
+    <string name="qulified_ke三">科目三设置</string>
+    <string name="qulified_s1">一次合格提成</string>
+    <string name="qulified_s2">二次合格提成</string>
+    <string name="qulified_s3">三次合格提成</string>
+    <string name="qulified_s4">四次合格提成</string>
+    <string name="qulified_s5">五次合格提成</string>
+    <string name="qulified_other">备注</string>
+
+
+    <!--通知管理-->
+    <string name="school_notice_title1">通知查询</string>
+    <string name="school_notice_title2">服务工单</string>
+    <string name="school_notice_title3">短信管理</string>
+    <string name="school_add_msg_object">接收对象：</string>
+    <string name="school_add_notice_content">通知内容：</string>
+    <string name="school_add_msg_content">短信内容：</string>
+    <string name="school_add_msg_sendright">即时发送</string>
+    <string name="school_add_msg_sendT">发送时间：</string>
+    <string name="school_add_notice_title">标题：</string>
+
+    <!--fragment1-->
+    <string name="school_edu_11">学员管理</string>
+    <string name="school_edu_12">教练管理</string>
+    <string name="school_edu_13">教练调休</string>
+    <string name="school_edu_21">教练车管理</string>
+    <string name="school_edu_22">模拟成绩</string>
+    <string name="school_edu_23">考试成绩</string>
+    <string name="school_edu_31">学时记录</string>
+    <string name="school_edu_32">评价记录</string>
+    <string name="school_edu_33">点评记录</string>
+
+    <string name="school_stu_detail_s1">模拟成绩</string>
+    <string name="school_stu_detail_s2">考试成绩</string>
+    <string name="school_stu_detail_s3">预约订单</string>
+    <string name="school_stu_detail_s4">陪练订单</string>
+    <string name="school_stu_detail_s5">学时记录</string>
+    <string name="school_stu_detail_s6">点评记录</string>
+    <string name="school_stu_detail_s7">投诉记录</string>
+    <string name="school_stu_detail_s8">评价记录</string>
+    <string name="school_stu_detail_s9">交易记录</string>
+
+    <!--fragment2-->
+    <string name="school_lesson_title1">课程名称</string>
+    <string name="school_lesson_title2">教学阶段</string>
+    <string name="school_lesson_title3">学时当量</string>
+    <string name="school_lesson_title4">状态</string>
+    <string name="title_activity_compay_main">CompayMainActivity</string>
+
+    <!--运管端-->
+    <string name="compay_longin_title">我是员工</string>
+    <string name="compay_title1">自注</string>
+    <string name="compay_title2">教学</string>
+    <string name="compay_title3">财务</string>
+    <string name="compay_title4">信息</string>
+    <string name="compay_into_searcher_address">请选择查询区域</string>
+    <string name="compay_choice">选择</string>
+
+    <string name="staff_name">员工姓名</string>
+    <string name="staff_phone">手机号码</string>
+    <string name="staff_qq">QQ号码</string>
+    <string name="staff_wechat">微信号</string>
+    <string name="staff_posi">职位</string>
+    <string name="staff_account">账号</string>
+    <string name="staff_belong">所属地区</string>
+    <string name="staff_address">家庭住址</string>
+    <string name="staff_code">员工编号</string>
+
+    <!--fragment1-->
+    <string name="compay_self_stu_code">编号</string>
+    <string name="compay_self_stu_name">姓名</string>
+    <string name="compay_self_stu_sex">性别</string>
+    <string name="compay_self_stu_Id">身份证号码</string>
+    <string name="compay_self_stu_phone">手机号码</string>
+    <string name="compay_self_stu_address">家庭住址</string>
+    <string name="compay_self_stu_qq">QQ号</string>
+    <string name="compay_self_stu_wechat">微信号</string>
+    <string name="compay_self_stu_email">邮箱</string>
+    <string name="compay_self_stu_carType">申请车型</string>
+    <string name="compay_self_stu_regist_time">注册时间</string>
+    <string name="compay_self_stu_regist_address">注册所在地</string>
+    <string name="compay_self_stu_regist_status">状态</string>
+    <string name="compay_self_tea_regist_car">是否带教练车</string>
+
+    <string name="compay_school_detail_code">驾校编号</string>
+    <string name="compay_school_detail_name">驾校名称</string>
+    <string name="compay_school_detail_person">驾校负责人</string>
+    <string name="compay_school_detail_phone">负责人号码</string>
+    <string name="compay_school_detail_registT">注册时间</string>
+    <string name="compay_school_detail_address">驾校所在地</string>
+    <string name="compay_school_detail_car">是否带教练车</string>
+    <!--菜单-->
+    <string name="compay_prohibition">禁用</string>
+
+    <!--fragment2-->
+    <string name="compay_teaching_part1">模拟成绩</string>
+    <string name="compay_teaching_part2">成绩查询</string>
+    <string name="compay_teaching_part3">预约订单</string>
+    <string name="compay_teaching_part4">陪练订单</string>
+    <string name="compay_teaching_part5">陪练记录</string>
+    <string name="compay_teaching_part6">学时记录</string>
+    <string name="compay_teaching_part7">评价记录</string>
+    <string name="compay_teaching_part8">点评记录</string>
+
+    <string name="compay_teaching_hour_detail_name">姓名</string>
+    <string name="compay_teaching_hour_detail_clerk">所属业务员</string>
+    <string name="compay_teaching_hour_detail_school">所属驾校</string>
+    <string name="compay_teaching_hour_detail_Id">身份证号码</string>
+    <string name="compay_teaching_hour_detail_code">计时仪编号</string>
+    <string name="compay_teaching_hour_detail_trainT">培训日期</string>
+    <string name="compay_teaching_hour_detail_hTime">学时时长</string>
+    <string name="compay_teaching_hour_detail_address">场地</string>
+    <string name="compay_teaching_hour_detail_teacher">教练</string>
+    <string name="compay_teaching_hour_detail_car">教练车</string>
+    <string name="compay_teaching_hour_detail_type">课时类型</string>
+    <string name="compay_teaching_hour_detail_status">同步状态</string>
+    <string name="compay_teaching_hour_detail_subject">课程描述</string>
+
+    <string name="compay_carDetail_Id">车牌</string>
+    <string name="compay_carDetail_label">车辆品牌</string>
+    <string name="compay_carDetail_getTime">购买日期</string>
+    <string name="compay_carDetail_run">初始公里数</string>
+    <string name="compay_carDetail_em">发动机号</string>
+    <string name="compay_carDetail_frame">车架号</string>
+    <string name="compay_carDetail_type">车型</string>
+    <string name="compay_carDetail_price">购买价格</string>
+    <string name="compay_carDetail_tea">教练出资</string>
+    <string name="compay_carDetail_zeren">责任教练</string>
+    <string name="compay_carDetail_res">理论油耗</string>
+    <string name="compay_carDetail_code">计时仪编号</string>
+    <string name="compay_carDetail_school">所属驾校</string>
+    <string name="compay_carDetail_other">备注</string>
+</resources>

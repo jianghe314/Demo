@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="61dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <RelativeLayout
+            android:visibility="gone"
+           android:id="@+id/item_school_account_reward_bg"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/item_school_account_reward_choice"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/student_test_choice1"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_marginStart="5dp"
+            android:padding="4dp"
+            android:orientation="vertical"
+            android:layout_weight="10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/item_school_account_reward_name"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/textColor"
+                    android:text="王大龙安抚"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/item_school_account_reward_st"
+                    android:layout_marginStart="170dp"
+                    android:layout_centerVertical="true"
+                    android:text="好评分："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/textColor_orange"
+                    android:layout_toEndOf="@+id/item_school_account_reward_st"
+                    android:id="@+id/item_school_account_reward_score"
+                    android:layout_centerVertical="true"
+                    android:text="255"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/item_school_account_reward_m"
+                    android:text="合格奖："
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/item_school_account_reward_get"
+                    android:text="400"
+                    android:textColor="@color/textColor_orange"
+                    android:layout_toEndOf="@+id/item_school_account_reward_m"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginStart="3dp"
+                    android:layout_centerVertical="true"
+                    android:text="元"
+                    android:layout_toEndOf="@+id/item_school_account_reward_get"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:id="@+id/item_school_account_pp"
+                    android:layout_marginStart="170dp"
+                    android:text="加盟日期：2017-10-25"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:src="@mipmap/arrow_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:background="@color/color_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"/>
+
+</LinearLayout>

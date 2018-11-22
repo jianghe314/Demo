@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"  android:padding="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/notice_tv"
+            android:layout_centerVertical="true"
+            android:text="发送人："
+            android:textColor="@color/textColor_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_toEndOf="@+id/notice_tv"
+            android:id="@+id/notice_sender"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:background="@color/light_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/notice_tv3"
+            android:layout_centerVertical="true"
+            android:text="主题："
+            android:textColor="@color/textColor_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_toEndOf="@+id/notice_tv3"
+            android:id="@+id/notice_theme"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:background="@color/light_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/notice_tv4"
+            android:layout_centerVertical="true"
+            android:text="时间："
+            android:textColor="@color/textColor_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_toEndOf="@+id/notice_tv4"
+            android:id="@+id/notice_time"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:background="@color/light_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6">
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:id="@+id/notice_tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正文："
+                android:textColor="@color/textColor_gray" />
+
+            <TextView
+                android:id="@+id/notice_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/notice_tv5"
+                android:layout_marginTop="5dp"
+                android:lineSpacingMultiplier="1.5"
+                android:textColor="@color/textColor" />
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

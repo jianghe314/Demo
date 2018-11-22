@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent" android:orientation="horizontal"
+    android:layout_height="100dp" android:weightSum="5" android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/booking_order_lesson"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/text_background1"
+            android:gravity="center"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="4"
+        android:layout_width="0dp"
+        android:layout_height="100dp">
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/girl"
+                android:layout_centerVertical="true"
+                android:id="@+id/booking_record_iv1"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/booking_order_name"
+                android:layout_marginStart="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/booking_record_iv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="9dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/booking_record_iv2"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/car"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/booking_record_car"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/booking_record_iv2"
+                android:layout_marginStart="12dp" />
+            <View
+                android:layout_centerVertical="true"
+                android:layout_marginStart="2dp"
+                android:layout_toEndOf="@+id/booking_record_car"
+                android:background="#7c7b7b"
+                android:layout_width="1dp"
+                android:layout_height="15dp"
+                android:id="@+id/imageView2" />
+            <TextView
+                android:layout_centerVertical="true"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/student_booking_order_carLable"
+                android:layout_marginStart="2dp"
+                android:layout_alignBottom="@+id/imageView2"
+                android:layout_toEndOf="@+id/imageView2" />
+            <ImageView
+                android:id="@+id/booking_record_call_phone"
+                android:background="@mipmap/phone"
+                android:layout_width="18dp"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/booking_record_phone_Num" />
+            <TextView
+                android:layout_centerVertical="true"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/student_booking_order_carLable"
+                android:layout_alignBottom="@+id/student_booking_order_carLable"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/booking_record_phone_Num" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="9dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:background="@mipmap/clock"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView3" />
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="13dp"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/student_booking_order_date"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/imageView3" />
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/booking_order_time"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/student_booking_order_date" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/student_booking_order_price"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:background="@drawable/price_background"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

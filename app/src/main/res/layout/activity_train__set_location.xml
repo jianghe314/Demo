@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1efef"
+    android:orientation="vertical"
+    tools:context=".Student.Train.Train_SetLocationActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/setLocation_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/getCurrent_location"
+            android:textColor="@color/textColor_evaluation"
+            android:text="使用当前位置"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textColor"
+            android:text="省市区"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4" />
+        <TextView
+            android:id="@+id/set_location"
+            android:textColor="@color/textColor_evaluation"
+            android:text="湖南-长沙-岳麓区"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:layout_alignBaseline="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <Button
+            android:id="@+id/set_location_sure"
+            android:layout_margin="10dp"
+            android:background="@drawable/btnstyle"
+            android:textColor="#ffffff"
+            android:text="确定"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="60dp"-->
+    <!--android:layout_marginTop="15dp">-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0.8dp"-->
+    <!--android:background="#b6b4b4" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/set_loction_complete"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginEnd="15dp"-->
+    <!--android:text="完成"-->
+    <!--android:textColor="@color/textColor_evaluation"-->
+    <!--android:textSize="16sp" />-->
+
+    <!--<View-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:layout_below="@+id/set_loction_complete"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0.8dp"-->
+    <!--android:background="#b6b4b4" />-->
+    <!--</RelativeLayout>-->
+    <!--&lt;!&ndash;地区选择器&ndash;&gt;-->
+    <!--<RelativeLayout-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="200dp">-->
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+    <!--&lt;!&ndash;android:onClick="onAddressPicker"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="点击"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content" />&ndash;&gt;-->
+
+    <!--</RelativeLayout>-->
+
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="55dp" android:weightSum="4" android:background="#ffffff">
+    <View
+        android:background="#949494"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/student_r1"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/booking_btn"
+                android:background="@mipmap/booking0"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/booking_tv"
+                android:layout_marginTop="2dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/booking_btn"
+                android:text="@string/booking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/student_r2"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/train_btn"
+                android:background="@mipmap/train0"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/train_tv"
+                android:layout_marginTop="2dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/train_btn"
+                android:text="@string/train"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/student_r3"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/exam_btn"
+                android:background="@mipmap/exam0"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/exam_tv"
+                android:layout_marginTop="2dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/exam_btn"
+                android:text="@string/exam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/student_r4"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/news_btn"
+                android:background="@mipmap/info0"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/news_tv"
+                android:layout_marginTop="2dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/news_btn"
+                android:text="@string/news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

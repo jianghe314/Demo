@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="55dp" android:weightSum="4" android:background="#ffffff">
+    <View
+        android:background="#949494"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/school_r1"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/school_eduManage_btn"
+                android:background="@mipmap/school_edu_manage0"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/school_eduManage_tv"
+                android:layout_marginTop="2dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/school_eduManage_btn"
+                android:text="@string/school_edu_manage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/school_r2"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/school_lesson_btn"
+                android:background="@mipmap/teacher_exam0"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/school_lesson_tv"
+                android:layout_marginTop="2dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/school_lesson_btn"
+                android:text="@string/school_lesson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/school_r3"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/school_booking_btn"
+                android:background="@mipmap/booking0"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/school_booking_tv"
+                android:layout_marginTop="2dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/school_booking_btn"
+                android:text="@string/school_booking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/school_r4"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/school_training_btn"
+                android:background="@mipmap/train0"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/school_training_tv"
+                android:layout_marginTop="2dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/school_training_btn"
+                android:text="@string/school_training"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/school_r5"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/schhol_acount_btn"
+                android:background="@mipmap/acount0"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/schhol_acount_tv"
+                android:layout_marginTop="2dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/schhol_acount_btn"
+                android:text="@string/school_acount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    tools:context="com.kangzhan.student.HomeFragment.activities.SelectCityActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/home_sele_city_detail_back"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/select_city_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:paddingStart="20dp"
+                android:background="@color/textColor_whit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/select_city_name"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/textColor_black"
+                    android:textSize="@dimen/text_size16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/select_city_name"
+                    android:id="@+id/select_city_name_tag"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/textColor_gray"
+                    android:textSize="@dimen/text_size16"
+                    android:text="@string/GPS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/textColor_gray"
+                        android:layout_marginStart="20dp"
+                        android:textSize="@dimen/text_size16"
+                        android:text="@string/has_open_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+                <com.kangzhan.student.mUI.mLableLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:id="@+id/select_city_list_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.kangzhan.student.mUI.mLableLayout>
+            </LinearLayout>
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/dot_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/open_city_name"
+                android:textSize="@dimen/text_size16"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+</LinearLayout>

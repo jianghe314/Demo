@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    tools:context=".Student.Train.Train_BookingActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/student_tain_booking_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    <LinearLayout
+        android:background="#dfdddd"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:layout_marginStart="10dp"
+            android:text="合计"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:textSize="@dimen/text_size16"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <android.support.v4.widget.Space
+            android:background="#fff000"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="0"
+            android:id="@+id/booking_Num"
+            android:textColor="@color/textColor_red"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_size16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="条订单"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_size16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.v4.widget.Space
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="0"
+            android:id="@+id/booking_has"
+            android:layout_marginLeft="3dp"
+            android:textColor="@color/textColor_red"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_size16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_gravity="center"
+            android:text="条教练接单"
+            android:textSize="@dimen/text_size16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.v4.widget.Space
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="0"
+            android:id="@+id/booking_price_Sum"
+            android:textColor="@color/textColor_red"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_size16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginEnd="10dp"
+            android:text="元"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_size16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!--改列表包含两个模板 已接单item_list_ordered_adapter 和未接单item_list_order_adapter-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/train_booking_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

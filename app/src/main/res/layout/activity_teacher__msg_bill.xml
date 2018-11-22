@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kangzhan.student.Teacher.person_data.Teacher_Msg_bill">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/teacher_msg_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+    <View
+        android:background="#acacac"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <RelativeLayout
+        android:background="@drawable/teacher_reward"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/textColor_whit"
+            android:text="年份选择"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/teacher_reward_select"
+            android:layout_width="100dp"
+            android:layout_height="30dp">
+            <TextView
+                android:id="@+id/teacher_msg_year"
+                android:textSize="@dimen/text_size16"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/textColor_whit"
+                android:text="2017年"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_marginLeft="10dp"
+                android:background="@color/textColor_whit"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:id="@+id/teacher_msg_year_sele"
+                android:layout_gravity="center"
+                android:background="@mipmap/arr_white_dn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.holenzhou.pullrecyclerview.PullRecyclerView
+        android:id="@+id/teacher_msg_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.holenzhou.pullrecyclerview.PullRecyclerView>
+</LinearLayout>

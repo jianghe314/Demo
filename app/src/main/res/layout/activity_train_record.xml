@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Student.Train.Train_recordActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/student_train_Record_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:background="#e7e6e6"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="25dp">
+        <TextView
+            android:layout_marginStart="10dp"
+            android:text="合计"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:textSize="@dimen/text_size16"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <android.support.v4.widget.Space
+            android:background="#fff000"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="0"
+            android:id="@+id/trian_record_Num"
+            android:textColor="@color/textColor_red"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_size16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="条订单"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_size16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/train_record_price_Sum"
+            android:textColor="@color/textColor_red"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_size16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginEnd="10dp"
+            android:text="元"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_size16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!--陪练记录列表 adapter：item_list_train_record_adapter-->
+    <com.holenzhou.pullrecyclerview.PullRecyclerView
+        android:id="@+id/train_record_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.holenzhou.pullrecyclerview.PullRecyclerView>
+
+</LinearLayout>

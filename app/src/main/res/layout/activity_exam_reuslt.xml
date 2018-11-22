@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Student.person_data_activity.ExamReusltActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/exam_Result_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:scaleType="fitXY"
+            android:src="@drawable/mstudent_exam_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textColor="@color/textColor_whit"
+            android:textSize="@dimen/text_size28"
+            android:layout_centerInParent="true"
+            android:text="考试成绩"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--考试成绩列表-->
+        <com.holenzhou.pullrecyclerview.PullRecyclerView
+            android:scrollbars="none"
+            android:id="@+id/examresult_listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.holenzhou.pullrecyclerview.PullRecyclerView>
+    </RelativeLayout>
+</LinearLayout>

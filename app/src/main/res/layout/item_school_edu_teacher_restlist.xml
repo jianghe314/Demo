@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="140dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/school_edu_teacher_restlist_container"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/school_edu_teacher_restlist_choice"
+                android:src="@mipmap/student_test_choice"
+                android:layout_centerInParent="true"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/school_edu_teacher_restlist_name"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="姓名"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/school_edu_teacher_restlist_starT"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开始时间" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/school_edu_teacher_restlist_endT"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:text="结束时间"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/school_edu_teacher_restlist_reason"
+                    android:maxLines="1"
+                    android:ellipsize="marquee"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:text="缘由"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/background_color1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+</LinearLayout>

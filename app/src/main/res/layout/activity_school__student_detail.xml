@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kangzhan.student.School.Edu.School_StudentDetail">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/school_edu_stuDetail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include
+                layout="@layout/school_student_detail_l1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <View
+                android:background="@color/background_color"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <RelativeLayout
+                android:id="@+id/school_stu_detail_r1"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <ImageView
+                    android:src="@mipmap/blue_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginStart="5dp"
+                    android:text="@string/school_stu_detail_s1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/school_stu_detail_test"
+                    android:layout_alignParentEnd="true"
+                    android:src="@mipmap/green_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/school_stu_detail_test_content"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--item_stu_detail_test-->
+            </LinearLayout>
+            <View
+                android:background="@color/color_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"/>
+            <RelativeLayout
+                android:id="@+id/school_stu_detail_r2"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <ImageView
+                    android:src="@mipmap/blue_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginStart="5dp"
+                    android:text="@string/school_stu_detail_s2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/school_stu_detail_exam"
+                    android:layout_alignParentEnd="true"
+                    android:src="@mipmap/green_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/school_stu_detail_exam_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <!--item_stu_detail_test-->
+            </LinearLayout>
+            <View
+                android:background="@color/color_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"/>
+            <RelativeLayout
+                android:id="@+id/school_stu_detail_r3"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <ImageView
+                    android:src="@mipmap/blue_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginStart="5dp"
+                    android:text="@string/school_stu_detail_s3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/school_stu_detail_order"
+                    android:layout_alignParentEnd="true"
+                    android:src="@mipmap/green_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/school_stu_detail_order_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--item_stu_detail_order-->
+            </LinearLayout>
+            <View
+                android:background="@color/color_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"/>
+            <RelativeLayout
+                android:id="@+id/school_stu_detail_r4"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <ImageView
+                    android:src="@mipmap/blue_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginStart="5dp"
+                    android:text="@string/school_stu_detail_s4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/school_stu_detail_train"
+                    android:layout_alignParentEnd="true"
+                    android:src="@mipmap/green_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/school_stu_detail_train_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--item_stu_detail_order-->
+            </LinearLayout>
+            <View
+                android:background="@color/color_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"/>
+            <RelativeLayout
+                android:id="@+id/school_stu_detail_r5"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <ImageView
+                    android:src="@mipmap/blue_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginStart="5dp"
+                    android:text="@string/school_stu_detail_s5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/school_stu_detail_learnH"
+                    android:layout_alignParentEnd="true"
+                    android:src="@mipmap/green_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/school_stu_detail_learnH_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--item_stu_detail_learn_h-->
+            </LinearLayout>
+
+            <View
+                android:background="@color/color_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"/>
+            <RelativeLayout
+                android:id="@+id/school_stu_detail_r6"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <ImageView
+                    android:src="@mipmap/blue_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginStart="5dp"
+                    android:text="@string/school_stu_detail_s6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/school_stu_detail_eval"
+                    android:layout_alignParentEnd="true"
+                    android:src="@mipmap/green_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/school_stu_detail_eval_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--item_stu_detail_evalu-->
+            </LinearLayout>
+            <View
+                android:background="@color/color_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"/>
+            <RelativeLayout
+                android:id="@+id/school_stu_detail_r7"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <ImageView
+                    android:src="@mipmap/blue_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginStart="5dp"
+                    android:text="@string/school_stu_detail_s7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/school_stu_detail_advise"
+                    android:layout_alignParentEnd="true"
+                    android:src="@mipmap/green_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/school_stu_detail_advise_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--item_stu_detail_advise-->
+            </LinearLayout>
+
+            <View
+                android:background="@color/color_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"/>
+            <RelativeLayout
+                android:id="@+id/school_stu_detail_r8"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <ImageView
+                    android:src="@mipmap/blue_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginStart="5dp"
+                    android:text="@string/school_stu_detail_s8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/school_stu_detail_remark"
+                    android:layout_alignParentEnd="true"
+                    android:src="@mipmap/green_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/school_stu_detail_remark_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--item_stu_detail_remark-->
+            </LinearLayout>
+            <View
+                android:background="@color/color_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"/>
+            <RelativeLayout
+                android:id="@+id/school_stu_detail_r9"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <ImageView
+                    android:src="@mipmap/blue_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginStart="5dp"
+                    android:text="@string/school_stu_detail_s9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/school_stu_detail_orderInfo"
+                    android:layout_alignParentEnd="true"
+                    android:src="@mipmap/green_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/school_stu_detail_orderInfo_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--item_stu_detail_remark-->
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

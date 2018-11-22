@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kangzhan.student.CompayManage.SlideMenu.StaffChangePsdActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/compay_slide_staff_psd_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    <RelativeLayout
+        android:background="@color/background_color"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_marginStart="15dp"
+            android:layout_centerVertical="true"
+            android:text="新密码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:background="@color/color_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <EditText
+            android:id="@+id/compay_staff_change_psd1"
+            android:padding="5dp"
+            android:background="@null"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:hint="6-16个字符，区分大小写"
+            android:textColor="@color/textColor_gray"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <View
+        android:background="@color/color_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"/>
+    <RelativeLayout
+        android:background="@color/background_color"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_marginStart="15dp"
+            android:layout_centerVertical="true"
+            android:text="确认新密码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:background="@color/color_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <EditText
+            android:id="@+id/compay_staff_change_psd2"
+            android:padding="5dp"
+            android:background="@null"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:hint="6-16个字符，区分大小写"
+            android:textColor="@color/textColor_gray"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <View
+        android:background="@color/color_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"/>
+    <Button
+        android:id="@+id/compay_staff_change_save"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/btnstyle"
+        android:textColor="@color/textColor_whit"
+        android:text="保存"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

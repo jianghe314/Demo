@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kangzhan.student.School.Notice.School_Advise_detail">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/school_news_advise_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/school_advise_detail_t"
+                    android:layout_margin="10dp"
+                    android:text="@string/teacher_title_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:ellipsize="end"
+                    android:id="@+id/school_advise_detail_title"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/school_advise_detail_t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/school_advise_detail_t2"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/teacher_news_advisedetail_problem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/school_advise_detail_content"
+                    android:lineSpacingMultiplier="1.2"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/school_advise_detail_t2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/school_advise_detail_container"
+        android:visibility="gone"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/school_advise_detail_time"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/school_advise_detail_t3"
+                android:layout_marginLeft="10dp"
+                android:text="@string/teacher_news_advisedetail_problem_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:background="@null"
+                android:maxLines="8"
+                android:maxLength="80"
+                android:id="@+id/school_advise_detail_reply"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <Button
+        android:id="@+id/school_advise_detail_deal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btnstyle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/textColor_whit"
+        android:text="关闭工单"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

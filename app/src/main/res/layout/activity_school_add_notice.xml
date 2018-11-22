@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kangzhan.student.School.Notice.School_add_Msg">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/school_notice_add_notice_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
+                app:cardCornerRadius="10dp"
+                android:layout_margin="20dp"
+                app:cardElevation="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp">
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:text="@string/school_add_msg_object"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:id="@+id/school_notice_addNotice_addObject"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:src="@mipmap/add"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.kangzhan.student.mUI.mLableLayout
+                            android:id="@+id/school_notice_addNotice_container"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </com.kangzhan.student.mUI.mLableLayout>
+
+                    </RelativeLayout>
+                    <View
+                        android:background="@color/color_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"/>
+                    <RelativeLayout
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/school_add_notice_t"
+                            android:text="@string/school_add_notice_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true" />
+                        <EditText
+                            android:id="@+id/school_notice_addNotice_title"
+                            android:textSize="@dimen/text_size16"
+                            android:background="@null"
+                            android:textColor="@color/textColor"
+                            android:layout_toEndOf="@+id/school_add_notice_t"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                    <View
+                        android:background="@color/color_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"/>
+                    <RelativeLayout
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/school_add_msg_c"
+                            android:text="@string/school_add_notice_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:id="@+id/school_notice_addNotice_content"
+                            android:background="@null"
+                            android:inputType="textMultiLine"
+                            android:layout_marginTop="5dp"
+                            android:lineSpacingMultiplier="1.3"
+                            android:layout_below="@+id/school_add_msg_c"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <ImageView
+                    android:id="@+id/school_notice_addNotice_isNow"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/teacher_news_choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/school_notice_addNotice_isNow"
+                    android:text="是否发送短信"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/school_add_msg_sendT"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/school_add_msg_sendT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@+id/school_add_msg_sendT"
+                    android:background="@drawable/edit_text_background"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/school_notice_addNotice_time"
+                        android:layout_weight="6"
+                        android:paddingLeft="5dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:id="@+id/school_notice_addNotice_chocieDate"
+                        android:layout_weight="1"
+                        android:src="@mipmap/student_apply_train_choicedate"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </RelativeLayout>
+            <Button
+                android:id="@+id/school_notice_addNotice_send"
+                android:layout_margin="20dp"
+                android:textColor="@color/textColor_whit"
+                android:background="@drawable/btnstyle"
+                android:text="@string/btn_sure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
